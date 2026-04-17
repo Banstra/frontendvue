@@ -33,7 +33,11 @@ import Lab1Task11 from '@/components/Lab1/Lab1Task11.vue'
 </template>
 
 <style scoped>
-.lab1 { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+.lab1 {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -44,8 +48,13 @@ import Lab1Task11 from '@/components/Lab1/Lab1Task11.vue'
   border: 1px solid #e2e8f0;
   border-radius: 8px;
 }
-.task h3 { margin: 0 0 1rem; font-size: 1.1rem; }
-.task input, .task select, .task textarea {
+.task h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+.task input,
+.task select,
+.task textarea {
   width: 100%;
   padding: 0.4rem;
   margin: 0.2rem 0;

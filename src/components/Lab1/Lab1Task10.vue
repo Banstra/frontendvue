@@ -15,11 +15,17 @@ const result = computed(() => getGoldenSize(value.value, unit.value))
       <option value="em">em</option>
       <option value="rem">rem</option>
     </select>
-    <p>Результат: <strong>{{ result }}</strong></p>
+    <p>
+      Результат: <strong>{{ result }}</strong>
+    </p>
     <div :style="{ fontSize: result }" class="preview">Пример текста</div>
   </div>
 </template>
 
 <style scoped>
-.preview { margin-top: 0.5rem; padding: 0.3rem; border-radius: 4px; }
+.preview {
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
 </style>

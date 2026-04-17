@@ -20,6 +20,8 @@ const result = computed(() => {
     <h3>Задача: Евклидово расстояние</h3>
     <input v-model="vecA" placeholder="Вектор A (через запятую)" />
     <input v-model="vecB" placeholder="Вектор B (через запятую)" />
-    <p>Расстояние: <strong>{{ result }}</strong></p>
+    <p>
+      Расстояние: <strong>{{ result }}</strong>
+    </p>
   </div>
 </template>

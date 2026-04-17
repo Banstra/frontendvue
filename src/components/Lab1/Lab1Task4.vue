@@ -20,6 +20,10 @@ const result = computed(() => {
 </template>
 
 <style scoped>
-.ok { color: #22c55e; }
-.error { color: #ef4444; }
+.ok {
+  color: #22c55e;
+}
+.error {
+  color: #ef4444;
+}
 </style>

@@ -10,7 +10,9 @@ const result = computed(() => getInitials(fullName.value))
   <div class="task">
     <h3>Задача: Подпись</h3>
     <input v-model="fullName" placeholder="Фамилия Имя Отчество" />
-    <p>Результат: <strong>{{ result || '—' }}</strong></p>
+    <p>
+      Результат: <strong>{{ result || '—' }}</strong>
+    </p>
   </div>
 </template>
 

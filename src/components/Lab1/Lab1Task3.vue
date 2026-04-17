@@ -10,6 +10,8 @@ const result = computed(() => getLastWordLength(text.value))
   <div class="task">
     <h3>Задача: Длина последнего слова</h3>
     <input v-model="text" placeholder="Введите строку" />
-    <p>Длина: <strong>{{ result }}</strong></p>
+    <p>
+      Длина: <strong>{{ result }}</strong>
+    </p>
   </div>
 </template>

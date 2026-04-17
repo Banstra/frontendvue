@@ -6,9 +6,7 @@ import { calculateArrivalTime } from './tasks'
 const scheduleHour = ref<number>(0)
 const delayHours = ref<number>(0)
 
-const result = computed(() =>
-  calculateArrivalTime(scheduleHour.value, delayHours.value)
-)
+const result = computed(() => calculateArrivalTime(scheduleHour.value, delayHours.value))
 </script>
 
 <template>
@@ -22,7 +20,9 @@ const result = computed(() =>
       Опоздание (часы):
       <input v-model.number="delayHours" type="number" min="0" />
     </label>
-    <p class="result">Новое время прибытия: <strong>{{ result }}:00</strong></p>
+    <p class="result">
+      Новое время прибытия: <strong>{{ result }}:00</strong>
+    </p>
   </div>
 </template>
 

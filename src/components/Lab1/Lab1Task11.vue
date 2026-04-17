@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { convertTemp } from './tasks'
+import { convertTempSafe } from './tasks' // используем обёртку
 
 const value = ref(32)
 const direction = ref<'toC' | 'toF'>('toC')
-const result = computed(() => convertTemp(value.value, direction.value))
+
+// computed с явным типом возвращаемого значения
+const result = computed<string>(() => convertTempSafe(value.value, direction.value))
 </script>
 
 <template>
@@ -15,6 +17,8 @@ const result = computed(() => convertTemp(value.value, direction.value))
       <option value="toC">°F → °C</option>
       <option value="toF">°C → °F</option>
     </select>
-    <p>Результат: <strong>{{ result }}</strong></p>
+    <p>
+      Результат: <strong>{{ result }}</strong>
+    </p>
   </div>
 </template>
