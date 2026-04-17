@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "type": "student",
+      "name": "32423",
+      "email": "test@gmail.com",
+      "enrollmentYear": 2023,
+      "id": "PzGHk80a6To"
+    },
+    {
+      "type": "teacher",
+      "name": "4444",
+      "email": "chyornobeliyesni@gmail.com",
+      "degree": "candidate",
+      "id": "WDfs5RZy5tU"
+    },
+    {
+      "type": "student",
+      "name": "43534",
+      "email": "test@gmail.com",
+      "enrollmentYear": 2023,
+      "id": "WxwIBbXfyWo"
+    },
+    {
+      "type": "teacher",
+      "name": "555",
+      "email": "chyornobeliyesni@gmail.com",
+      "degree": "candidate",
+      "id": "rr2nei3Hz0w"
+    }
+  ],
+  "courses": [
+    {
+      "id": "ZcHhptOivRk",
+      "title": "44",
+      "studentLimit": 4,
+      "status": "active",
+      "studentIds": [
+        "PzGHk80a6To"
+      ],
+      "teacherIds": [
+        "WDfs5RZy5tU"
+      ]
+    },
+    {
+      "id": "UHxIz9TZA44",
+      "title": "444",
+      "studentLimit": 4,
+      "status": "active",
+      "studentIds": [
+        "PzGHk80a6To"
+      ],
+      "teacherIds": [
+        "WDfs5RZy5tU"
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
