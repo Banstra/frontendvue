@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import FarmLayout from '@/layouts/FarmLayout.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,12 @@ const router = createRouter({
       path: '/lab3',
       name: 'lab3',
       component: () => import('../views/Lab3View.vue'),
+      children: [
+        { path: '', name: 'home', component: () => import('@/views/HomeView.vue') },
+        { path: 'printers', name: 'printers', component: () => import('@/views/PrintersView.vue') },
+        { path: 'filaments', name: 'filaments', component: () => import('@/views/FilamentsView.vue') },
+        { path: 'models', name: 'models', component: () => import('@/views/ModelsView.vue') }
+      ]
     },
   ],
 })
